@@ -1,0 +1,1 @@
+record Quote(string name, string quote);

@@ -7,9 +7,12 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod()
     )
 );
+
+builder.Services.AddSingleton(new QuotesService());
+
 var app = builder.Build();
 app.UseCors("AllowAll");
 
-app.MapGet("/Quote", () => "Hello World!");
+app.MapGet("/Quote", (QuotesService quotesService) => quotesService.GetRandomQuote());
 
 app.Run();
