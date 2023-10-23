@@ -20,9 +20,7 @@ internal class QuotesService
 
     internal Quote GetRandomQuote()
     {
-        return new Quote(
-            "Batman" + random.Next(1, 100),
-            "I'm Batman" + random.Next(1, 100)
-        );
+        var index = random.Next(0, Quotes.Count());
+        return Quotes.ElementAt(index);
     }
 }
