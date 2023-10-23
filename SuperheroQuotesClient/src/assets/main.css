@@ -1,3 +1,29 @@
+html {
+  font-size: var(--base-size);
+}
+
 body {
-  background-color: #cecece;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+:root {
+  --base-size: 16px;
+  --super-hero-size: 1rem;
+  --quote-size: 2rem;
+  --super-hero-color: #15ff00;
+  --quote-color: #332828;
+
+  --quote-box-color: white;
+  --bg-color: #6e6e6e;
 }

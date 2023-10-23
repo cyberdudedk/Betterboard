@@ -9,6 +9,22 @@
   </div>
 </template>
 
+<style scoped>
+.quote {
+  font-size: var(--quote-size);
+  color: var(--quote-color);
+}
+
+.superhero {
+  font-size: var(--super-hero-size);
+  color: var(--super-hero-color);
+}
+
+.superhero-quote {
+  background: var(--quote-box-color);
+}
+</style>
+
 <script  lang="ts">
 export default {
   data() {
