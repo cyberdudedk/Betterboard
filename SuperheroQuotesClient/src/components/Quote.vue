@@ -42,11 +42,11 @@ export default {
   },
   created() {
     this.fetchData();
-    setInterval(this.fetchData, 10000);
+    setInterval(this.fetchData, parseInt(process.env.TIMER_INTERVAL));
   },
   methods: {
     async fetchData() {
-      const res = await fetch("http://localhost:5016/Quote");
+      const res = await fetch(process.env.API_BASE + "/Quote");
       const data = await res.json();
       this.heroquote = data;
     },
