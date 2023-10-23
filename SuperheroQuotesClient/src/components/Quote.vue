@@ -18,10 +18,18 @@
 .superhero {
   font-size: var(--super-hero-size);
   color: var(--super-hero-color);
+  text-align: right;
+  font-weight: 700;
 }
 
 .superhero-quote {
   background: var(--quote-box-color);
+  border: 3px solid var(--quote-box-border);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0.3rem 0.2rem 1rem;
 }
 </style>
 

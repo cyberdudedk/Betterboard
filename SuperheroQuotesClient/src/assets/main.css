@@ -5,25 +5,27 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  color: var(--color-text);
-  background: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  font-family: Roboto;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--bg-color);
 }
 
 :root {
   --base-size: 16px;
-  --super-hero-size: 1rem;
-  --quote-size: 2rem;
-  --super-hero-color: #15ff00;
-  --quote-color: #332828;
+  --super-hero-size: 1.4rem;
+  --quote-size: 2.4rem;
+  --super-hero-color: #5d5d5d;
+  --quote-color: #22556c;
 
   --quote-box-color: white;
-  --bg-color: #6e6e6e;
+  --quote-box-border: #22556c;
+  --bg-color: #bdbcbc;
 }
