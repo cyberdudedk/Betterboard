@@ -18,6 +18,7 @@ export default {
   },
   created() {
     this.fetchData();
+    setInterval(this.fetchData, 10000);
   },
   methods: {
     async fetchData() {
