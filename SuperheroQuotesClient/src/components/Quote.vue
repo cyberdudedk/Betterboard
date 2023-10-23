@@ -20,11 +20,10 @@ export default {
     this.fetchData();
   },
   methods: {
-    fetchData() {
-      this.heroquote = {
-        quote: "This is a quote",
-        name: "Superman",
-      };
+    async fetchData() {
+      const res = await fetch("http://localhost:5016/Quote");
+      const data = await res.json();
+      this.heroquote = data;
     },
   },
 };
